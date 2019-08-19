@@ -158,7 +158,7 @@ public class Sentence_01 {
 		
 //		3. 위 구문을 switch문으로 바꿔주세요. 
 		int score2 = 89;
-		switch(score2 / 10){
+		switch(score2){
 			case 90:
 				System.out.println("A");
 				break;
