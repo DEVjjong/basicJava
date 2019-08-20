@@ -114,7 +114,7 @@ public class Sentence_01 {
 		*/
 		
 //		1. 1~5 사이의 랜덤한 정수값을 변수 aa에 저장해주세요.
-		int aa = (int)(Math.random()*6);
+		int aa = (int)(Math.random()*5+1);
 		
 //		2. aa의 값이 1이면 "강남에 32평 아파트 당첨"
 //	  	   aa의 값이 2이면 "람보르기니 당첨"
@@ -158,22 +158,21 @@ public class Sentence_01 {
 		
 //		3. 위 구문을 switch문으로 바꿔주세요. 
 		int score2 = 89;
-		switch(score2){
-			case 90:
+		switch(score2 / 10){
+			case 10: case 9: //같은 구문일때에는 이렇게 한줄로 쓸 수 있음
 				System.out.println("A");
 				break;
-			case 80:
+			case 8:
 				System.out.println("B");
 				break;
-			case 70:
+			case 7:
 				System.out.println("C");
 				break;
-			case 60:
+			case 6:
 				System.out.println("D");
 				break;
 			default:
 				System.out.println("나가");
-			
 		}
 		
 		
