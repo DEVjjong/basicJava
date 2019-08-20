@@ -4,41 +4,106 @@ public class Exam_04 {
 	public static void main(String[] args) {
 		
 
-	
-	
-//	[4-1] 다음의 문장들을 조건식으로 표현하라.
+//	[완료] [4-1] 다음의 문장들을 조건식으로 표현하라.
 //	1. int형 변수 x가 10보다 크고 20보다 작을 때 true인 조건식
-//		if(x<10 && x>20){
-//			
-//		}
+//		int x = 11;
+//		boolean b = (10 < x && x < 20);
+//		System.out.println(b);
+		
 //	2. char형 변수 ch가 공백이나 탭이 아닐 때 true인 조건식
-//	3. char형 변수 ch가 ‘x' 또는 ’X'일 때 true인 조건식
+//		char ch = 'a';
+//		boolean b = !(ch == ' ' || ch == '\t');
+////		boolean b = (' ' != ch || ch != '	');
+//		System.out.println(b);
+		
+		
+//	3. char형 변수 ch가 'x' 또는 'X'일 때 true인 조건식
+//		char ch = 'x';
+//		boolean b = ('x' == ch || ch == 'X');
+//		System.out.println(b);
+		
 //	4. char형 변수 ch가 숫자(‘0’~‘9’)일 때 true인 조건식
+//		char ch = 9;
+//		boolean b = (0 <= ch && ch <= 9);
+//		System.out.println(b);
+		
 //	5. char형 변수 ch가 영문자(대문자 또는 소문자)일 때 true인 조건식
+//		char ch = 'a';
+//		boolean b = ( 'A' <= ch && ch <= 'Z' || 'a' <= ch && ch <= 'z');
+//		System.out.println(b);
+		
 //	6. int형 변수 year가 400으로 나눠떨어지거나 또는 4로 나눠떨어지고 100으로 나눠떨어지지 않을 때 true인 조건식
+//		int year = 0;
+//		boolean b = ( 400%= year);
+//		System.out.println(b);
+
+		
 //	7. boolean형 변수 powerOn가 false일 때 true인 조건식
+//		boolean powerOn = false;
+//		boolean b = ( false == powerOn );
+//		System.out.println(b);
+		
 //	8. 문자열 참조변수 str이 “yes”일 때 true인 조건식
+//		String str = "yes";
+//		boolean b = ( "yes" == str );
+//		System.out.println(b);
 //	
 //	
-//	[4-2] 1부터 20까지의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오.
-//	
+//	[완료] [4-2] 1부터 20까지의 정수 중에서 2 또는 3의 배수가 아닌 수의 총합을 구하시오.
+//		int hab = 0;
+//		int i = 1;
+//		while(i < 21){
+//			if(i%2==1){
+//				hab += i;
+//			}
+//			i++;
+//		}
+//		System.out.println(hab);
 //	
 //	[4-3] 1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3+...+10)의 결과를 계산하시오.
 //	
 //	
 //	[4-4] 1+(-2)+3+(-4)+... 과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100이상이 되는지 구하시오.
+//		int aa1 = 1;
+//		int num2 = 0;
+//		while(aa1 >= 1){
+//			if(num2 < 101){
+//				num2 += aa1;
+//			}System.out.println(num2);
+//			aa1++;
+//		}System.out.println(num2);
 //	
 //	
-//	[4-5] 다음의 for문을 while문으로 변경하시오.
-			for(int i=0; i<=10; i++) {
-			for(int j=0; j<=i; j++)
-			System.out.print("*");
-			System.out.println();
-			}
+//	[완료] [4-5] 다음의 for문을 while문으로 변경하시오.
+//			for(int i=0; i<=10; i++) {
+//				for(int j=0; j<=i; j++){
+//					System.out.print("*");
+//					}
+//					System.out.println();
+//					
+//			}
+//			
+//			int i = 0;
+//			int j = 0;
+//			while(i <= 10){
+//				while(j <= i){
+//					System.out.print("*");
+//					j++;
+//				}
+//				j = 0;	
+//				i++;
+//				System.out.println();
+//			}
 //	
 //	
-//	[4-6] 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하는 프로그램을 작성하시오.
-//	
+//	[완료] [4-6] 두 개의 주사위를 던졌을 때, 눈의 합이 6이 되는 모든 경우의 수를 출력하는 프로그램을 작성하시오.
+//		for(int dice1 = 1; dice1 < 7; dice1++){
+//			for(int dice2 = 1; dice2 < 7; dice2++){
+//				if(dice1 + dice2 == 6){
+//					System.out.println(dice1 + " + " + dice2 + " + " + " = " + (dice1+dice2) );
+//				}
+//			}
+//		}
 		
 //	
 //	[완료] [4-7] Math.random()을 이용해서 1부터 6사이의 임의의 정수를 변수 value에 저장하는
@@ -50,6 +115,10 @@ public class Exam_04 {
 //	
 //	
 //	[4-8] 방정식 2x+4y=10의 모든 해를 구하시오. 단, x와 y는 정수이고 각각의 범위는 0<=x<=10, 0<=y<=10 이다.
+//			[실행결과]
+//			x=1, y=2
+//			x=3, y=1
+//			x=5, y=0
 //			
 //			
 //			
@@ -59,16 +128,12 @@ public class Exam_04 {
 //			String str = "12345";
 //			int sum = 0;
 //			for(int i=0; i < str.length(); i++) {
-//			/*
-//			(1) 알맞은 코드를 넣어 완성하시오.
-//			*/
+//		/*	(1) 알맞은 코드를 넣어 완성하시오.	*/
 //			}
 //			System.out.println("sum="+sum);
 	
 //			[실행결과]
 //			15
-//			[실행결과]
-//			x=1, y=2
 //	
 //	
 //	
@@ -112,27 +177,48 @@ public class Exam_04 {
 //					2*1=2 3*1=3 4*1=4
 //					2*2=4 3*2=6 4*2=8
 //					2*3=6 3*3=9 4*3=12
+			
 //					5*1=5 6*1=6 7*1=7
 //					5*2=10 6*2=12 7*2=14
 //					5*3=15 6*3=18 7*3=21
+			
 //					8*1=8 9*1=9
 //					8*2=16 9*2=18
 //					8*3=24 9*3=27
+//		for(int i2 = 1; i2 < 10; i2++){
+//			for(int j2 = 2; j2 <10; j2++){
+//				for(int i = 2; i < 5; i++){
+//					for(int j = i2; j < j; j++){
+//						System.out.println(i + " * " + j + " = " + (i * j));
+//					}
+//				}
+//			for(int i = 2; i < 5; i++){
+//				for(int j = i2; j < 3; j++){
+//					System.out.println(i + " * " + j + " = " + (i * j));
+//				}
+//			}
+//			i2++;
+//			for(int i = 2; i < 5; i++){
+//				for(int j = i2; j < 4; j++){
+//					System.out.println(i + " * " + j + " = " + (i * j));
+//				}
+//			}
+//			}
+//		}
 		
-		for(int i=1; i<=3; i++){
-//			int i가 1과같거나 3보다 작거나 같을때까지 i++을 하여라
-			for(int j=2; j<=4; j++){
-//				int j가 2와 같거나 9보다 작거나 같을떄까지 i++을 하여라
-				System.out.print(j + "*" + i + "=" + j * i + "\t");
-			}
-			for(int j=5; j<=7; j++){
-				System.out.print(j + "*" + i + "=" + j * i + "\t");
-			}
-			for(int j=8; j<=9; j++){
-				System.out.print(j + "*" + i + "=" + j * i + "\t");
-			}
-			System.out.println();
-		}
+		
+//		for(int i=1; i<=3; i++){
+//			for(int j=2; j<=4; j++){
+//				System.out.print(j + "*" + i + "=" + j * i + "\t");
+//			}
+//			for(int j=5; j<=7; j++){
+//				System.out.print(j + "*" + i + "=" + j * i + "\t");
+//			}
+//			for(int j=8; j<=9; j++){
+//				System.out.print(j + "*" + i + "=" + j * i + "\t");
+//			}
+//			System.out.println();
+//		}
 
 
 //			
@@ -156,16 +242,6 @@ public class Exam_04 {
 //			} else {
 //			System.out.println(value+"는 숫자가 아닙니다.");
 //			}
-//			[실행결과]
-//			2*1=2 3*1=3 4*1=4
-//			2*2=4 3*2=6 4*2=8
-//			2*3=6 3*3=9 4*3=12
-//			5*1=5 6*1=6 7*1=7
-//			5*2=10 6*2=12 7*2=14
-//			5*3=15 6*3=18 7*3=21
-//			8*1=8 9*1=9
-//			8*2=16 9*2=18
-//			8*3=24 9*3=27
 //			[실행결과]
 //			12o34는 숫자가 아닙니다.			
 //			
