@@ -1,5 +1,7 @@
 package c_sentence;
 
+import java.util.Scanner;
+
 public class Sentence_02 {
 	public static void main(String[] args) {
 		/*
@@ -303,14 +305,13 @@ public class Sentence_02 {
 		
 //		3. 구구단을 while문만을 이용해서 만들어주세요 
 //		int goo1 = 2;
-//		int goo2 = 1;
-//		while(goo1 <= 9){
-//			while(goo2 <= 9){
+//		while(goo1 < 10){
+//			int goo2 = 1;
+//			while(goo2 < 10){
 //				System.out.println(goo1 + " * " + goo2 + " = " + (goo1 * goo2));
 //				goo2++;	
 //			}
 //			System.out.println();
-//			goo2 = 1;
 //			goo1++;
 //		}
 //		
@@ -321,6 +322,7 @@ public class Sentence_02 {
 //		System.out.println("\n");
 		
 //		4. 5~? 더하였을때 200이상이 되는가?
+<<<<<<< HEAD
 //		int aa1 = 4;
 //		int num2 = 0;
 //		while(num2 < 200){
@@ -328,6 +330,58 @@ public class Sentence_02 {
 //				num2 += aa1;
 //		}
 //		System.out.println(aa1);
+=======
+		
+		
+//		[방법1] 
+//		int summ = 0;
+//		int aa = 4;
+//		while(!(summ >= 200)){
+//			++aa;
+//			summ += aa;
+//		}
+//		System.out.println(aa);
+		
+		
+//		[방법2] break
+//		int summ = 0;
+//		int aa = 5;
+//		while(true){
+//			summ += aa;
+//			if(summ >= 200){
+//				break;
+//			}
+//			aa++;
+//		}
+//		System.out.println(aa);
+		
+		
+//		[방법3] contunue
+//		(홀수만 출력하는 문장)
+//		for (int i = 0; i < 10; i++) {
+//			if (i%2 == 1) {
+//				System.out.println(i);
+//			}
+//		}
+		
+//		(continue를 사용하여 홀수만 출력하는 문장)
+//		for (int i = 0; i < 10; i++) {
+//			if (i%2 == 0) {
+//				continue;
+//			}
+//			System.out.println(i);
+//		}
+		
+		
+//		int aa1 = 5;
+//		int num2 = 0;
+//		while(aa1 >= 5){
+//			if(num2 < 201){
+//				num2 += aa1;
+//			}
+//			aa1++;
+//		}
+>>>>>>> branch 'master' of https://github.com/dlwlrma-xyz/basicJava.git
 		
 		
 		
@@ -336,6 +390,35 @@ public class Sentence_02 {
 //		char c = str.charAt(0);
 //		System.out.println(c);
 //		System.out.println(str.length());
+		
+		
+		
+		
+		
+		/*
+		4. do-while
+			- while과 유사하나 while이나 for문의 경우 실행횟수가 0회일 수 있다.
+			  하지만 do-while의 경우는 무조건 한번 수행해야 한다.
+		
+		*/
+		
+		Scanner sc = new Scanner(System.in);
+//		System.out.println("입력해주세요 : ");
+//		String str = sc.next(); //next() 문자열을 받는다.
+//		int str = sc.nextInt();
+//		System.out.println("입력하신 문자는 : " + str*2);
+		
+//		1. 문자를 입력받아서 출력해주세요
+//		(무한으로 가능하게 해주세요) -> "stop"을 입력하면 종료하게 만들어주세요
+//		* 문자열을 비교할때는 == 가 아니라 .equals 를 붙여야한다.
+		
+		String str = "";
+		do{
+			System.out.println("문자를 입력해주세요");
+			str = sc.next();
+			System.out.println("입력하신 값은 : " + str);
+		}while(!(str.equals("stop")));
+		
 		
 		
 		

@@ -11,11 +11,10 @@ public class Exam_04 {
 //		System.out.println(b);
 		
 //	2. char형 변수 ch가 공백이나 탭이 아닐 때 true인 조건식
-//		char ch = 'a';
+//		char ch = '';
 //		boolean b = !(ch == ' ' || ch == '\t');
 ////		boolean b = (' ' != ch || ch != '	');
 //		System.out.println(b);
-		
 		
 //	3. char형 변수 ch가 'x' 또는 'X'일 때 true인 조건식
 //		char ch = 'x';
@@ -37,7 +36,6 @@ public class Exam_04 {
 //		boolean b = ( 400%= year);
 //		System.out.println(b);
 
-		
 //	7. boolean형 변수 powerOn가 false일 때 true인 조건식
 //		boolean powerOn = false;
 //		boolean b = ( false == powerOn );
@@ -53,7 +51,7 @@ public class Exam_04 {
 //		int hab = 0;
 //		int i = 1;
 //		while(i < 21){
-//			if(i%2==1){
+//			if(!(i%2==0 || i%3==0)){
 //				hab += i;
 //			}
 //			i++;
@@ -61,7 +59,14 @@ public class Exam_04 {
 //		System.out.println(hab);
 //	
 //	[4-3] 1+(1+2)+(1+2+3)+(1+2+3+4)+...+(1+2+3+...+10)의 결과를 계산하시오.
-//	
+//		for(int i = 1; i < 11; i++){
+//			for(int j = 1; j < i; j++){
+//				
+//			}
+//		}
+		
+		
+		
 //	
 //	[4-4] 1+(-2)+3+(-4)+... 과 같은 식으로 계속 더해나갔을 때, 몇까지 더해야 총합이 100이상이 되는지 구하시오.
 //		int aa1 = 1;
@@ -123,7 +128,7 @@ public class Exam_04 {
 //			
 //			
 //	[4-9] 숫자로 이루어진 문자열 str이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코
-//		   드를 완성하라. 만일 문자열이 "12345"라면, ‘1+2+3+4+5’의 결과인 15를 출력이 출력되
+//		   드를 완성하라. 만일 문자열이 "12345"라면, '1+2+3+4+5'의 결과인 15를 출력이 출력되
 //		    어야 한다. (1)에 알맞은 코드를 넣으시오.
 //			String str = "12345";
 //			int sum = 0;
@@ -137,8 +142,9 @@ public class Exam_04 {
 //	
 //	
 //	
+//			(while문을 이용)
 //	[4-10] int타입의 변수 num 이 있을 때, 각 자리의 합을 더한 결과를 출력하는 코드를
-//			완성하라. 만일 변수 num의 값이 12345라면, ‘1+2+3+4+5’의 결과인 15를 출력하라. (1)
+//			완성하라. 만일 변수 num의 값이 12345라면, '1+2+3+4+5' 의 결과인 15를 출력하라. (1)
 //			에 알맞은 코드를 넣으시오.
 //			[주의] 문자열로 변환하지 말고 숫자로만 처리해야 한다.
 //			int num = 12345;
@@ -147,14 +153,17 @@ public class Exam_04 {
 //			(1) 알맞은 코드를 넣어 완성하시오.
 //			*/
 //			System.out.println("sum="+sum);
+//			[실행결과]
+//			15
 //			
 //			
+		
+		
 //			
 //	[4-11] 피보나치(Fibonnaci) 수열(數列)은 앞을 두 수를 더해서 다음 수를 만들어 나가
 //			는 수열이다. 예를 들어 앞의 두 수가 1과 1이라면 그 다음 수는 2가 되고 그 다음 수는
 //			1과 2를 더해서 3이 되어서 1,1,2,3,5,8,13,21,... 과 같은 식으로 진행된다. 1과 1부터
 //			시작하는 피보나치수열의 10번째 수는 무엇인지 계산하는 프로그램을 완성하시오.
-//			[연습문제]/ch4/Exercise4_11.java
 //			// Fibonnaci 수열의 시작의 첫 두 숫자를 1, 1로 한다.
 //			int num1 = 1;
 //			int num2 = 1;
@@ -165,8 +174,6 @@ public class Exam_04 {
 //			(1) 알맞은 코드를 넣어 완성하시오.
 //			*/
 //			}
-//			[실행결과]
-//			15
 //			[실행결과]
 //			1,1,2,3,5,8,13,21,34,55
 //	
@@ -217,11 +224,55 @@ public class Exam_04 {
 //				for(int i = 2; i < 10; i++){
 //					for(int j = i2; j < j2; j++){
 //						System.out.print(i + " * " + j + " = " + (i * j) + "\t");
+		
+		
+//		for(int i = 1; i < 4; i++){ //i는 곱하는 값이다 1~3까지 출력하기 위해 4보다 작은값으로 적었다.
+//			for(int j = 2; j < 10; j++){ //j는 단수이다. 9단까지만 출력하기 위해 10보다 작은값으로 적었다.
+//				int x = j; //j(단수)를 x에 대입시킨다. 
+//				int y = i; //i(곱의값)를 y에 대입시킨다.
+//				if(x > 9) //9단까지만 출력한다. 이 코드가 없으면 10단까지 출력된다.
+//					break;
+//				System.out.print(x + "*" + y + "=" + x * y + "\t"); //x(단수) * y(곱의값) 을 대입하여 출력하는 문이다.
+//			}
+//			System.out.println(); //아래 한줄씩 내리는것 이다.
+//		}
+		
+		
+		
+		
+//		for(int i2 = 1; i2 < 5; i2++){
+//		for(int j2 = 2; j2 < 5; j2++){
+//			for(int i = 2; i < 10; i++){
+//				for(int j = i2; j < j2; j++){
+//					System.out.print(i + " * " + j + " = " + (i * j) + "\t");
+//				}
+//			}
+//		}
+//		System.out.println();
+//	}
+		
+		
+		
+		
+		
+//		for(int i2 = 1; i2 < 10; i2++){
+//			for(int j2 = 2; j2 <10; j2++){
+//				for(int i = 2; i < 5; i++){
+//					for(int j = i2; j < j; j++){
+//						System.out.println(i + " * " + j + " = " + (i * j));
+>>>>>>> branch 'master' of https://github.com/dlwlrma-xyz/basicJava.git
 //					}
 //				}
 //			}
+<<<<<<< HEAD
 //			System.out.println();
 //		}
+=======
+//		}
+		
+		
+		
+>>>>>>> branch 'master' of https://github.com/dlwlrma-xyz/basicJava.git
 		
 		
 //			for(int i = 2; i < 5; i++){
@@ -256,6 +307,7 @@ public class Exam_04 {
 //			
 //			
 //			
+//		a.charAt(0) 을 이용
 //		[4-13] 다음은 주어진 문자열(value)이 숫자인지를 판별하는 프로그램이다. (1)에 알맞
 //			은 코드를 넣어서 프로그램을 완성하시오.
 //			[연습문제]/ch4/Exercise4_13.java
