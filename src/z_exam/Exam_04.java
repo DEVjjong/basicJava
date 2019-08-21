@@ -100,7 +100,7 @@ public class Exam_04 {
 //		for(int dice1 = 1; dice1 < 7; dice1++){
 //			for(int dice2 = 1; dice2 < 7; dice2++){
 //				if(dice1 + dice2 == 6){
-//					System.out.println(dice1 + " + " + dice2 + " + " + " = " + (dice1+dice2) );
+//					System.out.println(dice1 + " + " + dice2 + " = " + (dice1+dice2) );
 //				}
 //			}
 //		}
@@ -185,13 +185,45 @@ public class Exam_04 {
 //					8*1=8 9*1=9
 //					8*2=16 9*2=18
 //					8*3=24 9*3=27
-//		for(int i2 = 1; i2 < 10; i2++){
-//			for(int j2 = 2; j2 <10; j2++){
-//				for(int i = 2; i < 5; i++){
-//					for(int j = i2; j < j; j++){
-//						System.out.println(i + " * " + j + " = " + (i * j));
+		
+		
+		
+		
+		
+//		for (int i = 1; i < 4; i++) {
+//			for (int j = 1; j < 10; j++) {
+//				int x = j + 1 + (i - 1) / 3 * 3;
+//				int y = i % 3 == 0 ? 3 : i % 3;
+//				if (x > 9) // 9단까지만 출력한다. 이 코드가 없으면 10단까지 출력된다.
+//					break;
+//				System.out.print(x + "*" + y + "=" + x * y + "\t"); //
+//			}
+//			System.out.println();
+//			if (i % 3 == 0)
+//				System.out.println(); //
+//		}
+//		for (int i = 1; i < 4; i++) {
+//			for (int j = 2; j < 10; j++) {
+//			}
+//			System.out.println();
+//		}
+
+		
+		
+		
+		
+//		for(int i2 = 1; i2 < 5; i2++){
+//			for(int j2 = 2; j2 < 5; j2++){
+//				for(int i = 2; i < 10; i++){
+//					for(int j = i2; j < j2; j++){
+//						System.out.print(i + " * " + j + " = " + (i * j) + "\t");
 //					}
 //				}
+//			}
+//			System.out.println();
+//		}
+		
+		
 //			for(int i = 2; i < 5; i++){
 //				for(int j = i2; j < 3; j++){
 //					System.out.println(i + " * " + j + " = " + (i * j));

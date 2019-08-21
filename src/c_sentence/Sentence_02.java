@@ -321,14 +321,13 @@ public class Sentence_02 {
 //		System.out.println("\n");
 		
 //		4. 5~? 더하였을때 200이상이 되는가?
-		int aa1 = 5;
-		int num2 = 0;
-		while(aa1 >= 5){
-			if(num2 < 201){
-				num2 += aa1;
-			}
-			aa1++;
-		}
+//		int aa1 = 4;
+//		int num2 = 0;
+//		while(num2 < 200){
+//				++aa1;
+//				num2 += aa1;
+//		}
+//		System.out.println(aa1);
 		
 		
 		
